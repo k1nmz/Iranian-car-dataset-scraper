@@ -66,8 +66,6 @@ iranian-car-dataset-scraper/
     ├── Dena/
     ├── Rana/
     └── L90/
-```md
----
 
 ## scraper.py
 
