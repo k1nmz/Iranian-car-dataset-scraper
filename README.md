@@ -32,7 +32,29 @@ The dataset contains the following car models (each as a separate folder):
 
 ---
 
+
 ## Project Structure
+
+```text
+iranian-car-dataset-scraper/
+├── scraper.py            # Main Selenium-based web scraper
+├── augment_simple.py     # Bonus: simple dataset expansion script
+├── labels.csv            # CSV file with labels and image paths
+├── requirements.txt
+├── README.md
+└── dataset/
+    ├── 206/
+    ├── 206_SD/
+    ├── 207/
+    ├── 405/
+    ├── 504/
+    ├── Peride/
+    ├── Samand_LX/
+    ├── Samand_Soren/
+    ├── Tara/
+    ├── Dena/
+    ├── Rana/
+    └── L90/
 
 
 
