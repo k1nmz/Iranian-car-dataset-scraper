@@ -127,7 +127,7 @@ image_95.jpg → image_95_copy1.jpg
 ## Usage
 
 ### 1. Run the scraper
-```bash
+
 python scraper.py
 
 ### 2. Expand dataset 
