@@ -46,7 +46,7 @@ The dataset contains the following car models (each as a separate folder):
 
 ## Project Structure
 
-
+```text
 iranian-car-dataset-scraper/
 ├── scraper.py           
 ├── augment_simple.py     # Bonus: simple dataset expansion script
@@ -66,7 +66,7 @@ iranian-car-dataset-scraper/
     ├── Dena/
     ├── Rana/
     └── L90/
-
+```
 ## scraper.py
 
 Main script that:
@@ -97,6 +97,7 @@ CAR_URLS = {
     "Samand_Soren": "https://divar.ir/s/tehran/car?q=Samand_Soren",
     "Tara": "https://divar.ir/s/tehran/car?q=tara",
 }
+```
 ## augment_simple.py (Bonus)
 augment_simple.py
 
@@ -129,7 +130,7 @@ image_95.jpg → image_95_copy1.jpg
 ```bash
 python scraper.py
 
-# 2. Expand dataset (optional)
+### 2. Expand dataset 
 python augment_simple.py
 
 
