@@ -46,7 +46,7 @@ The dataset contains the following car models (each as a separate folder):
 
 ## Project Structure
 
-```text
+
 iranian-car-dataset-scraper/
 ├── scraper.py           
 ├── augment_simple.py     # Bonus: simple dataset expansion script
