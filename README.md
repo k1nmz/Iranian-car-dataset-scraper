@@ -25,7 +25,18 @@ The dataset contains the following car models (each as a separate folder):
 
 
 
-206, 206_SD, 207, 405, 504, Peride, Samand_LX, Samand_Soren, Tara, Dena, Rana, L90
+- 206  
+- 206_SD  
+- 207  
+- 405  
+- 504  
+- Peride  
+- Samand_LX  
+- Samand_Soren  
+- Tara  
+- Dena  
+- Rana  
+- L90  
 
 
 > ⚠️ For model 504, only ~90 images were available on Divar at scraping time.
@@ -37,9 +48,9 @@ The dataset contains the following car models (each as a separate folder):
 
 ```text
 iranian-car-dataset-scraper/
-├── scraper.py            # Main Selenium-based web scraper
+├── scraper.py           
 ├── augment_simple.py     # Bonus: simple dataset expansion script
-├── labels.csv            # CSV file with labels and image paths
+├── labels.csv            
 ├── requirements.txt
 ├── README.md
 └── dataset/
@@ -55,30 +66,7 @@ iranian-car-dataset-scraper/
     ├── Dena/
     ├── Rana/
     └── L90/
-
-
-
-project/
-├── scraper.py # Main Selenium-based web scraper
-├── augment_simple.py # Bonus: dataset expansion script
-├── labels.csv # CSV file with labels and paths for scraped images
-├── requirements.txt
-├── README.md
-└── dataset/
-├── 206/
-├── 206_SD/
-├── 207/
-├── 405/
-├── 504/
-├── Peride/
-├── Samand_LX/
-├── Samand_Soren/
-├── Tara/
-├── Dena/
-├── Rana/
-└── L90/
-
-
+```md
 ---
 
 ## scraper.py
@@ -111,7 +99,7 @@ CAR_URLS = {
     "Samand_Soren": "https://divar.ir/s/tehran/car?q=Samand_Soren",
     "Tara": "https://divar.ir/s/tehran/car?q=tara",
 }
-
+## augment_simple.py (Bonus)
 augment_simple.py
 
 Bonus script that duplicates existing images to expand the dataset without extra libraries.
@@ -130,16 +118,17 @@ image_95.jpg → image_95_copy1.jpg
 
 
 
-Requirements
+## Requirements
 
-selenium
+- selenium
+- webdriver-manager
+- Google Chrome (required for Selenium WebDriver)
 
-webdriver-manager
 
-Google Chrome installed (for Selenium WebDriver)
+## Usage
 
-Usage
-# 1. Run the scraper
+### 1. Run the scraper
+```bash
 python scraper.py
 
 # 2. Expand dataset (optional)
